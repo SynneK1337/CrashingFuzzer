@@ -5,5 +5,5 @@ vulnerabilities in iDevices XD
 
 # Usage
 * Edit config.cfg file
-*```fbchat```
+* ```pip install fbchat```
 * python main.py
