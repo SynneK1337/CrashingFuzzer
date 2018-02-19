@@ -7,3 +7,5 @@ vulnerabilities in iDevices XD
 * Edit config.cfg file
 * ```pip install fbchat```
 * python main.py
+
+* If there' s '%' in config, replace it with %%
