@@ -1,6 +1,7 @@
 import fbchat
 import configparser
 import time
+import random
 # Parsing the config file
 config = configparser.ConfigParser()
 config.read('config.cfg')
@@ -12,8 +13,14 @@ victim = config['OPTIONS']['victim_id']
 client = fbchat.Client(login, psw)
 
 # Send a message
-for i in range(33, 1114111):
+random.seed()
+for i in range(0, 1114112):
   try:
     client.sendMessage(chr(i), victim)
   except:
-    pass
+    print(time.ctime(), i, chr(i), "failed.")
+
+  else:
+    print(time.ctime(), i, chr(i), " successful")
+
+  time.sleep(random.random*3)
